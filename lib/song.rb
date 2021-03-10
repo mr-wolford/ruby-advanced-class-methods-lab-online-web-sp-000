@@ -63,7 +63,7 @@ class Song
     artist_name = x[0]
     y = x[1].split(".")
     song_title = y[0]
-    song = self.new_by_name(song_title)
+    song.name = song_title
     song.artist_name = artist_name
     song.save
     song
